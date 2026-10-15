@@ -1,11 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+:root {
+  --couleur-gris: #212121;
+  --couleur-maison-button: #ff3b5c;
+  --couleur-petit-texte: #7e7e7e;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  width: 25%;
   background-color: black;
+  font-family: Inter;
+  padding: 22px;
+  gap: 80px;
+}
+
+.barrenavigation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: var(--couleur-gris);
+  width: 50%;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  gap: 8px;
+}
+
+input {
+  background: none;
+  border: none;
+  color: var(--couleur-petit-texte);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.p1 {
+  color: white;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.rouge {
+  color: var(--couleur-maison-button);
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  color: var(--couleur-petit-texte);
 }
